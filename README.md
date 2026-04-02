@@ -1,1 +1,1 @@
-Add "reverse" word after replacing the word "hub" - that will give you the prompt to create the repo
+[Add "reverse" word after replacing the word "hub" - that will give you the prompt to create the repo](https://www.gitreverse.com/)
