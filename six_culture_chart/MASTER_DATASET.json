@@ -1,0 +1,1794 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "computation_timestamp": "2026-08-29T09:47:45.083789+00:00",
+    "engine": "six_culture_chart_v2",
+    "python_version": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v22-x86_64-with-glibc2.39"
+  },
+  "input": {
+    "original_input": {
+      "date": "12-11-1998",
+      "time": "14:31 pm",
+      "time_certainty": "14:28 - 14:32",
+      "birthplace": "Ambarnath, Maharashtra, India",
+      "gender": "Male",
+      "current_residence": "Trowbridge, United Kingdom",
+      "calendar_note": "Gregorian calendar assumed, no DST ambiguity (India does not observe DST)"
+    },
+    "normalized": {
+      "date_gregorian": "1998-11-12",
+      "time_local_24h": "14:31:00",
+      "time_uncertainty_min": "14:28:00",
+      "time_uncertainty_max": "14:32:00",
+      "uncertainty_seconds_minus": 180,
+      "uncertainty_seconds_plus": 60,
+      "latitude": 19.1864,
+      "longitude": 73.1854,
+      "elevation_m": 14,
+      "coordinate_source": "GeoNames/OpenStreetMap centroid for Ambarnath city",
+      "iana_timezone": "Asia/Kolkata",
+      "utc_offset": "+05:30",
+      "dst_status": "none",
+      "utc_instant": "1998-11-12T09:01:00Z",
+      "utc_instant_min": "1998-11-12T08:58:00Z",
+      "utc_instant_max": "1998-11-12T09:02:00Z",
+      "gender": "male"
+    }
+  },
+  "input_audit": {
+    "step": "2_input_audit",
+    "original_values": {
+      "date": "12-11-1998",
+      "time": "14:31 pm",
+      "time_certainty": "14:28 - 14:32",
+      "birthplace": "Ambarnath, Maharashtra, India",
+      "gender": "Male",
+      "current_residence": "Trowbridge, United Kingdom",
+      "calendar_note": "Gregorian calendar assumed, no DST ambiguity (India does not observe DST)"
+    },
+    "normalized": {
+      "gregorian_date": "1998-11-12",
+      "local_time_24h": "14:31:00",
+      "utc_instant": "1998-11-12T09:01:00+00:00",
+      "julian_day_ut": 2451129.87569444,
+      "civil_weekday": "Friday",
+      "latitude_decimal": 19.1864,
+      "longitude_decimal": 73.1854,
+      "elevation_m": 14.0,
+      "coordinate_source": "GeoNames centroid for Ambarnath, Maharashtra",
+      "iana_timezone": "Asia/Kolkata",
+      "iana_timezone_verified": "Asia/Kolkata",
+      "utc_offset": "+05:30",
+      "dst_active": false,
+      "dst_note": "India has not observed DST since 1945"
+    },
+    "solar_times": {
+      "local_mean_solar_time": "13:53:44",
+      "sunrise_local": "06:42:41",
+      "sunset_local": "17:59:49",
+      "birth_is_daytime": true
+    },
+    "uncertainty_ensemble": {
+      "T_minus": "1998-11-12T14:28:00+05:30",
+      "T_reported": "1998-11-12T14:31:00+05:30",
+      "T_plus": "1998-11-12T14:32:00+05:30",
+      "range_description": "14:28 to 14:32 IST (4-minute window)"
+    }
+  },
+  "astronomical_base": {
+    "reported": {
+      "julian_day_ut": 2451129.87569444,
+      "ayanamsha_lahiri": 23.841216,
+      "planets": {
+        "Sun": {
+          "tropical_longitude": 229.766785,
+          "sidereal_longitude": 205.925568,
+          "latitude": 3.2e-05,
+          "speed_deg_per_day": 1.005906,
+          "retrograde": false,
+          "tropical_sign": "Scorpio",
+          "sidereal_sign": "Libra",
+          "degree_in_sign_tropical": 19.7668,
+          "degree_in_sign_sidereal": 25.9256
+        },
+        "Moon": {
+          "tropical_longitude": 155.35542,
+          "sidereal_longitude": 131.514204,
+          "latitude": 0.664038,
+          "speed_deg_per_day": 12.295785,
+          "retrograde": false,
+          "tropical_sign": "Virgo",
+          "sidereal_sign": "Leo",
+          "degree_in_sign_tropical": 5.3554,
+          "degree_in_sign_sidereal": 11.5142
+        },
+        "Mercury": {
+          "tropical_longitude": 252.53164,
+          "sidereal_longitude": 228.690424,
+          "latitude": -2.708699,
+          "speed_deg_per_day": 0.950083,
+          "retrograde": false,
+          "tropical_sign": "Sagittarius",
+          "sidereal_sign": "Scorpio",
+          "degree_in_sign_tropical": 12.5316,
+          "degree_in_sign_sidereal": 18.6904
+        },
+        "Venus": {
+          "tropical_longitude": 233.091081,
+          "sidereal_longitude": 209.249865,
+          "latitude": 0.46934,
+          "speed_deg_per_day": 1.255066,
+          "retrograde": false,
+          "tropical_sign": "Scorpio",
+          "sidereal_sign": "Libra",
+          "degree_in_sign_tropical": 23.0911,
+          "degree_in_sign_sidereal": 29.2499
+        },
+        "Mars": {
+          "tropical_longitude": 171.408186,
+          "sidereal_longitude": 147.56697,
+          "latitude": 1.574815,
+          "speed_deg_per_day": 0.580053,
+          "retrograde": false,
+          "tropical_sign": "Virgo",
+          "sidereal_sign": "Leo",
+          "degree_in_sign_tropical": 21.4082,
+          "degree_in_sign_sidereal": 27.567
+        },
+        "Jupiter": {
+          "tropical_longitude": 348.163577,
+          "sidereal_longitude": 324.322361,
+          "latitude": -1.433695,
+          "speed_deg_per_day": -0.004016,
+          "retrograde": true,
+          "tropical_sign": "Pisces",
+          "sidereal_sign": "Aquarius",
+          "degree_in_sign_tropical": 18.1636,
+          "degree_in_sign_sidereal": 24.3224
+        },
+        "Saturn": {
+          "tropical_longitude": 28.648988,
+          "sidereal_longitude": 4.807772,
+          "latitude": -2.740159,
+          "speed_deg_per_day": -0.071535,
+          "retrograde": true,
+          "tropical_sign": "Aries",
+          "sidereal_sign": "Aries",
+          "degree_in_sign_tropical": 28.649,
+          "degree_in_sign_sidereal": 4.8078
+        },
+        "Rahu": {
+          "tropical_longitude": 147.023918,
+          "sidereal_longitude": 123.182702,
+          "latitude": 0.0,
+          "speed_deg_per_day": -0.05297,
+          "retrograde": true,
+          "tropical_sign": "Leo",
+          "sidereal_sign": "Leo",
+          "degree_in_sign_tropical": 27.0239,
+          "degree_in_sign_sidereal": 3.1827
+        },
+        "Ketu": {
+          "tropical_longitude": 327.023918,
+          "sidereal_longitude": 303.182702,
+          "latitude": 0.0,
+          "speed_deg_per_day": -0.05297,
+          "retrograde": true,
+          "tropical_sign": "Aquarius",
+          "sidereal_sign": "Aquarius",
+          "degree_in_sign_tropical": 27.0239,
+          "degree_in_sign_sidereal": 3.1827
+        }
+      },
+      "ascendant": {
+        "tropical": 346.86737,
+        "sidereal": 323.026154,
+        "tropical_sign": "Pisces",
+        "sidereal_sign": "Aquarius",
+        "degree_in_sign_tropical": 16.8674,
+        "degree_in_sign_sidereal": 23.0262
+      },
+      "midheaven": {
+        "tropical": 260.558728,
+        "sidereal": 236.717512,
+        "tropical_sign": "Sagittarius",
+        "sidereal_sign": "Scorpio"
+      }
+    },
+    "ensemble": {
+      "T_minus": {
+        "julian_day_ut": 2451129.87361111,
+        "ayanamsha_lahiri": 23.841216,
+        "planets": {
+          "Sun": {
+            "tropical_longitude": 229.764689,
+            "sidereal_longitude": 205.923473,
+            "latitude": 3.2e-05,
+            "speed_deg_per_day": 1.005904,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 19.7647,
+            "degree_in_sign_sidereal": 25.9235
+          },
+          "Moon": {
+            "tropical_longitude": 155.329803,
+            "sidereal_longitude": 131.488588,
+            "latitude": 0.661797,
+            "speed_deg_per_day": 12.296331,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 5.3298,
+            "degree_in_sign_sidereal": 11.4886
+          },
+          "Mercury": {
+            "tropical_longitude": 252.529661,
+            "sidereal_longitude": 228.688445,
+            "latitude": -2.70874,
+            "speed_deg_per_day": 0.950207,
+            "retrograde": false,
+            "tropical_sign": "Sagittarius",
+            "sidereal_sign": "Scorpio",
+            "degree_in_sign_tropical": 12.5297,
+            "degree_in_sign_sidereal": 18.6884
+          },
+          "Venus": {
+            "tropical_longitude": 233.088466,
+            "sidereal_longitude": 209.24725,
+            "latitude": 0.469418,
+            "speed_deg_per_day": 1.255066,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 23.0885,
+            "degree_in_sign_sidereal": 29.2473
+          },
+          "Mars": {
+            "tropical_longitude": 171.406977,
+            "sidereal_longitude": 147.565761,
+            "latitude": 1.574802,
+            "speed_deg_per_day": 0.580055,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 21.407,
+            "degree_in_sign_sidereal": 27.5658
+          },
+          "Jupiter": {
+            "tropical_longitude": 348.163586,
+            "sidereal_longitude": 324.32237,
+            "latitude": -1.433703,
+            "speed_deg_per_day": -0.004023,
+            "retrograde": true,
+            "tropical_sign": "Pisces",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 18.1636,
+            "degree_in_sign_sidereal": 24.3224
+          },
+          "Saturn": {
+            "tropical_longitude": 28.649137,
+            "sidereal_longitude": 4.807921,
+            "latitude": -2.740164,
+            "speed_deg_per_day": -0.071537,
+            "retrograde": true,
+            "tropical_sign": "Aries",
+            "sidereal_sign": "Aries",
+            "degree_in_sign_tropical": 28.6491,
+            "degree_in_sign_sidereal": 4.8079
+          },
+          "Rahu": {
+            "tropical_longitude": 147.024029,
+            "sidereal_longitude": 123.182813,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Leo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 27.024,
+            "degree_in_sign_sidereal": 3.1828
+          },
+          "Ketu": {
+            "tropical_longitude": 327.024029,
+            "sidereal_longitude": 303.182813,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Aquarius",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 27.024,
+            "degree_in_sign_sidereal": 3.1828
+          }
+        },
+        "ascendant": {
+          "tropical": 345.914475,
+          "sidereal": 322.073259,
+          "tropical_sign": "Pisces",
+          "sidereal_sign": "Aquarius",
+          "degree_in_sign_tropical": 15.9145,
+          "degree_in_sign_sidereal": 22.0733
+        },
+        "midheaven": {
+          "tropical": 259.864973,
+          "sidereal": 236.023757,
+          "tropical_sign": "Sagittarius",
+          "sidereal_sign": "Scorpio"
+        }
+      },
+      "T_reported": {
+        "julian_day_ut": 2451129.87569444,
+        "ayanamsha_lahiri": 23.841216,
+        "planets": {
+          "Sun": {
+            "tropical_longitude": 229.766785,
+            "sidereal_longitude": 205.925568,
+            "latitude": 3.2e-05,
+            "speed_deg_per_day": 1.005906,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 19.7668,
+            "degree_in_sign_sidereal": 25.9256
+          },
+          "Moon": {
+            "tropical_longitude": 155.35542,
+            "sidereal_longitude": 131.514204,
+            "latitude": 0.664038,
+            "speed_deg_per_day": 12.295785,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 5.3554,
+            "degree_in_sign_sidereal": 11.5142
+          },
+          "Mercury": {
+            "tropical_longitude": 252.53164,
+            "sidereal_longitude": 228.690424,
+            "latitude": -2.708699,
+            "speed_deg_per_day": 0.950083,
+            "retrograde": false,
+            "tropical_sign": "Sagittarius",
+            "sidereal_sign": "Scorpio",
+            "degree_in_sign_tropical": 12.5316,
+            "degree_in_sign_sidereal": 18.6904
+          },
+          "Venus": {
+            "tropical_longitude": 233.091081,
+            "sidereal_longitude": 209.249865,
+            "latitude": 0.46934,
+            "speed_deg_per_day": 1.255066,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 23.0911,
+            "degree_in_sign_sidereal": 29.2499
+          },
+          "Mars": {
+            "tropical_longitude": 171.408186,
+            "sidereal_longitude": 147.56697,
+            "latitude": 1.574815,
+            "speed_deg_per_day": 0.580053,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 21.4082,
+            "degree_in_sign_sidereal": 27.567
+          },
+          "Jupiter": {
+            "tropical_longitude": 348.163577,
+            "sidereal_longitude": 324.322361,
+            "latitude": -1.433695,
+            "speed_deg_per_day": -0.004016,
+            "retrograde": true,
+            "tropical_sign": "Pisces",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 18.1636,
+            "degree_in_sign_sidereal": 24.3224
+          },
+          "Saturn": {
+            "tropical_longitude": 28.648988,
+            "sidereal_longitude": 4.807772,
+            "latitude": -2.740159,
+            "speed_deg_per_day": -0.071535,
+            "retrograde": true,
+            "tropical_sign": "Aries",
+            "sidereal_sign": "Aries",
+            "degree_in_sign_tropical": 28.649,
+            "degree_in_sign_sidereal": 4.8078
+          },
+          "Rahu": {
+            "tropical_longitude": 147.023918,
+            "sidereal_longitude": 123.182702,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Leo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 27.0239,
+            "degree_in_sign_sidereal": 3.1827
+          },
+          "Ketu": {
+            "tropical_longitude": 327.023918,
+            "sidereal_longitude": 303.182702,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Aquarius",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 27.0239,
+            "degree_in_sign_sidereal": 3.1827
+          }
+        },
+        "ascendant": {
+          "tropical": 346.86737,
+          "sidereal": 323.026154,
+          "tropical_sign": "Pisces",
+          "sidereal_sign": "Aquarius",
+          "degree_in_sign_tropical": 16.8674,
+          "degree_in_sign_sidereal": 23.0262
+        },
+        "midheaven": {
+          "tropical": 260.558728,
+          "sidereal": 236.717512,
+          "tropical_sign": "Sagittarius",
+          "sidereal_sign": "Scorpio"
+        }
+      },
+      "T_plus": {
+        "julian_day_ut": 2451129.87638889,
+        "ayanamsha_lahiri": 23.841216,
+        "planets": {
+          "Sun": {
+            "tropical_longitude": 229.767483,
+            "sidereal_longitude": 205.926267,
+            "latitude": 3.2e-05,
+            "speed_deg_per_day": 1.005906,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 19.7675,
+            "degree_in_sign_sidereal": 25.9263
+          },
+          "Moon": {
+            "tropical_longitude": 155.363959,
+            "sidereal_longitude": 131.522743,
+            "latitude": 0.664785,
+            "speed_deg_per_day": 12.295603,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 5.364,
+            "degree_in_sign_sidereal": 11.5227
+          },
+          "Mercury": {
+            "tropical_longitude": 252.5323,
+            "sidereal_longitude": 228.691084,
+            "latitude": -2.708685,
+            "speed_deg_per_day": 0.950041,
+            "retrograde": false,
+            "tropical_sign": "Sagittarius",
+            "sidereal_sign": "Scorpio",
+            "degree_in_sign_tropical": 12.5323,
+            "degree_in_sign_sidereal": 18.6911
+          },
+          "Venus": {
+            "tropical_longitude": 233.091952,
+            "sidereal_longitude": 209.250736,
+            "latitude": 0.469314,
+            "speed_deg_per_day": 1.255067,
+            "retrograde": false,
+            "tropical_sign": "Scorpio",
+            "sidereal_sign": "Libra",
+            "degree_in_sign_tropical": 23.092,
+            "degree_in_sign_sidereal": 29.2507
+          },
+          "Mars": {
+            "tropical_longitude": 171.408589,
+            "sidereal_longitude": 147.567373,
+            "latitude": 1.57482,
+            "speed_deg_per_day": 0.580052,
+            "retrograde": false,
+            "tropical_sign": "Virgo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 21.4086,
+            "degree_in_sign_sidereal": 27.5674
+          },
+          "Jupiter": {
+            "tropical_longitude": 348.163575,
+            "sidereal_longitude": 324.322359,
+            "latitude": -1.433692,
+            "speed_deg_per_day": -0.004014,
+            "retrograde": true,
+            "tropical_sign": "Pisces",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 18.1636,
+            "degree_in_sign_sidereal": 24.3224
+          },
+          "Saturn": {
+            "tropical_longitude": 28.648938,
+            "sidereal_longitude": 4.807722,
+            "latitude": -2.740158,
+            "speed_deg_per_day": -0.071534,
+            "retrograde": true,
+            "tropical_sign": "Aries",
+            "sidereal_sign": "Aries",
+            "degree_in_sign_tropical": 28.6489,
+            "degree_in_sign_sidereal": 4.8077
+          },
+          "Rahu": {
+            "tropical_longitude": 147.023881,
+            "sidereal_longitude": 123.182665,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Leo",
+            "sidereal_sign": "Leo",
+            "degree_in_sign_tropical": 27.0239,
+            "degree_in_sign_sidereal": 3.1827
+          },
+          "Ketu": {
+            "tropical_longitude": 327.023881,
+            "sidereal_longitude": 303.182665,
+            "latitude": 0.0,
+            "speed_deg_per_day": -0.05297,
+            "retrograde": true,
+            "tropical_sign": "Aquarius",
+            "sidereal_sign": "Aquarius",
+            "degree_in_sign_tropical": 27.0239,
+            "degree_in_sign_sidereal": 3.1827
+          }
+        },
+        "ascendant": {
+          "tropical": 347.185375,
+          "sidereal": 323.344159,
+          "tropical_sign": "Pisces",
+          "sidereal_sign": "Aquarius",
+          "degree_in_sign_tropical": 17.1854,
+          "degree_in_sign_sidereal": 23.3442
+        },
+        "midheaven": {
+          "tropical": 260.789865,
+          "sidereal": 236.948649,
+          "tropical_sign": "Sagittarius",
+          "sidereal_sign": "Scorpio"
+        }
+      }
+    }
+  },
+  "jyotisha": {
+    "system": "jyotisha",
+    "configuration": {
+      "zodiac": "sidereal",
+      "ayanamsha": "Lahiri",
+      "house_system": "whole_sign",
+      "node_type": "mean"
+    },
+    "lagna": {
+      "sign": "Aquarius",
+      "degree": 23.0262,
+      "nakshatra": {
+        "name": "Purva Bhadrapada",
+        "pada": 1,
+        "lord": "Jupiter",
+        "index": 24
+      }
+    },
+    "grahas": {
+      "Sun": {
+        "sidereal_longitude": 205.9256,
+        "sign": "Libra",
+        "degree_in_sign": 25.9256,
+        "house": 9,
+        "nakshatra": "Vishakha",
+        "nakshatra_pada": 2,
+        "nakshatra_lord": "Jupiter",
+        "retrograde": false,
+        "speed": 1.005906,
+        "dignity": "debilitated",
+        "sign_lord": "Venus",
+        "combustion": false,
+        "natural_benefic": false
+      },
+      "Moon": {
+        "sidereal_longitude": 131.5142,
+        "sign": "Leo",
+        "degree_in_sign": 11.5142,
+        "house": 7,
+        "nakshatra": "Magha",
+        "nakshatra_pada": 4,
+        "nakshatra_lord": "Ketu",
+        "retrograde": false,
+        "speed": 12.295785,
+        "dignity": "neutral",
+        "sign_lord": "Sun",
+        "combustion": false,
+        "natural_benefic": true
+      },
+      "Mercury": {
+        "sidereal_longitude": 228.6904,
+        "sign": "Scorpio",
+        "degree_in_sign": 18.6904,
+        "house": 10,
+        "nakshatra": "Jyeshtha",
+        "nakshatra_pada": 1,
+        "nakshatra_lord": "Mercury",
+        "retrograde": false,
+        "speed": 0.950083,
+        "dignity": "neutral",
+        "sign_lord": "Mars",
+        "combustion": false,
+        "natural_benefic": true
+      },
+      "Venus": {
+        "sidereal_longitude": 209.2499,
+        "sign": "Libra",
+        "degree_in_sign": 29.2499,
+        "house": 9,
+        "nakshatra": "Vishakha",
+        "nakshatra_pada": 3,
+        "nakshatra_lord": "Jupiter",
+        "retrograde": false,
+        "speed": 1.255066,
+        "dignity": "own_sign",
+        "sign_lord": "Venus",
+        "combustion": true,
+        "natural_benefic": true
+      },
+      "Mars": {
+        "sidereal_longitude": 147.567,
+        "sign": "Leo",
+        "degree_in_sign": 27.567,
+        "house": 7,
+        "nakshatra": "Uttara Phalguni",
+        "nakshatra_pada": 1,
+        "nakshatra_lord": "Sun",
+        "retrograde": false,
+        "speed": 0.580053,
+        "dignity": "neutral",
+        "sign_lord": "Sun",
+        "combustion": false,
+        "natural_benefic": false
+      },
+      "Jupiter": {
+        "sidereal_longitude": 324.3224,
+        "sign": "Aquarius",
+        "degree_in_sign": 24.3224,
+        "house": 1,
+        "nakshatra": "Purva Bhadrapada",
+        "nakshatra_pada": 2,
+        "nakshatra_lord": "Jupiter",
+        "retrograde": true,
+        "speed": -0.004016,
+        "dignity": "neutral",
+        "sign_lord": "Saturn",
+        "combustion": false,
+        "natural_benefic": true
+      },
+      "Saturn": {
+        "sidereal_longitude": 4.8078,
+        "sign": "Aries",
+        "degree_in_sign": 4.8078,
+        "house": 3,
+        "nakshatra": "Ashwini",
+        "nakshatra_pada": 2,
+        "nakshatra_lord": "Ketu",
+        "retrograde": true,
+        "speed": -0.071535,
+        "dignity": "debilitated",
+        "sign_lord": "Mars",
+        "combustion": false,
+        "natural_benefic": false
+      },
+      "Rahu": {
+        "sidereal_longitude": 123.1827,
+        "sign": "Leo",
+        "degree_in_sign": 3.1827,
+        "house": 7,
+        "nakshatra": "Magha",
+        "nakshatra_pada": 1,
+        "nakshatra_lord": "Ketu",
+        "retrograde": true,
+        "speed": -0.05297,
+        "dignity": "neutral",
+        "sign_lord": "Sun",
+        "combustion": false,
+        "natural_benefic": false
+      },
+      "Ketu": {
+        "sidereal_longitude": 303.1827,
+        "sign": "Aquarius",
+        "degree_in_sign": 3.1827,
+        "house": 1,
+        "nakshatra": "Dhanishta",
+        "nakshatra_pada": 3,
+        "nakshatra_lord": "Mars",
+        "retrograde": true,
+        "speed": -0.05297,
+        "dignity": "neutral",
+        "sign_lord": "Saturn",
+        "combustion": false,
+        "natural_benefic": false
+      }
+    },
+    "houses": {
+      "1": {
+        "sign": "Aquarius",
+        "lord": "Saturn"
+      },
+      "2": {
+        "sign": "Pisces",
+        "lord": "Jupiter"
+      },
+      "3": {
+        "sign": "Aries",
+        "lord": "Mars"
+      },
+      "4": {
+        "sign": "Taurus",
+        "lord": "Venus"
+      },
+      "5": {
+        "sign": "Gemini",
+        "lord": "Mercury"
+      },
+      "6": {
+        "sign": "Cancer",
+        "lord": "Moon"
+      },
+      "7": {
+        "sign": "Leo",
+        "lord": "Sun"
+      },
+      "8": {
+        "sign": "Virgo",
+        "lord": "Mercury"
+      },
+      "9": {
+        "sign": "Libra",
+        "lord": "Venus"
+      },
+      "10": {
+        "sign": "Scorpio",
+        "lord": "Mars"
+      },
+      "11": {
+        "sign": "Sagittarius",
+        "lord": "Jupiter"
+      },
+      "12": {
+        "sign": "Capricorn",
+        "lord": "Saturn"
+      }
+    },
+    "nakshatras": {},
+    "dignities": {},
+    "aspects": [
+      {
+        "from": "Sun",
+        "from_house": 9,
+        "aspect": 7,
+        "to_house": 4,
+        "to_sign": "Taurus"
+      },
+      {
+        "from": "Moon",
+        "from_house": 7,
+        "aspect": 7,
+        "to_house": 2,
+        "to_sign": "Pisces"
+      },
+      {
+        "from": "Mercury",
+        "from_house": 10,
+        "aspect": 7,
+        "to_house": 5,
+        "to_sign": "Gemini"
+      },
+      {
+        "from": "Venus",
+        "from_house": 9,
+        "aspect": 7,
+        "to_house": 4,
+        "to_sign": "Taurus"
+      },
+      {
+        "from": "Mars",
+        "from_house": 7,
+        "aspect": 8,
+        "to_house": 3,
+        "to_sign": "Aries"
+      },
+      {
+        "from": "Mars",
+        "from_house": 7,
+        "aspect": 4,
+        "to_house": 11,
+        "to_sign": "Sagittarius"
+      },
+      {
+        "from": "Mars",
+        "from_house": 7,
+        "aspect": 7,
+        "to_house": 2,
+        "to_sign": "Pisces"
+      },
+      {
+        "from": "Jupiter",
+        "from_house": 1,
+        "aspect": 9,
+        "to_house": 10,
+        "to_sign": "Scorpio"
+      },
+      {
+        "from": "Jupiter",
+        "from_house": 1,
+        "aspect": 5,
+        "to_house": 6,
+        "to_sign": "Cancer"
+      },
+      {
+        "from": "Jupiter",
+        "from_house": 1,
+        "aspect": 7,
+        "to_house": 8,
+        "to_sign": "Virgo"
+      },
+      {
+        "from": "Saturn",
+        "from_house": 3,
+        "aspect": 10,
+        "to_house": 1,
+        "to_sign": "Aquarius"
+      },
+      {
+        "from": "Saturn",
+        "from_house": 3,
+        "aspect": 3,
+        "to_house": 6,
+        "to_sign": "Cancer"
+      },
+      {
+        "from": "Saturn",
+        "from_house": 3,
+        "aspect": 7,
+        "to_house": 10,
+        "to_sign": "Scorpio"
+      },
+      {
+        "from": "Rahu",
+        "from_house": 7,
+        "aspect": 9,
+        "to_house": 4,
+        "to_sign": "Taurus"
+      },
+      {
+        "from": "Rahu",
+        "from_house": 7,
+        "aspect": 5,
+        "to_house": 12,
+        "to_sign": "Capricorn"
+      },
+      {
+        "from": "Rahu",
+        "from_house": 7,
+        "aspect": 7,
+        "to_house": 2,
+        "to_sign": "Pisces"
+      },
+      {
+        "from": "Ketu",
+        "from_house": 1,
+        "aspect": 9,
+        "to_house": 10,
+        "to_sign": "Scorpio"
+      },
+      {
+        "from": "Ketu",
+        "from_house": 1,
+        "aspect": 5,
+        "to_house": 6,
+        "to_sign": "Cancer"
+      },
+      {
+        "from": "Ketu",
+        "from_house": 1,
+        "aspect": 7,
+        "to_house": 8,
+        "to_sign": "Virgo"
+      }
+    ],
+    "navamsha": {
+      "Sun": {
+        "sign": "Taurus",
+        "degree": 23.3304
+      },
+      "Moon": {
+        "sign": "Cancer",
+        "degree": 13.6278
+      },
+      "Mercury": {
+        "sign": "Sagittarius",
+        "degree": 18.2136
+      },
+      "Venus": {
+        "sign": "Gemini",
+        "degree": 23.2491
+      },
+      "Mars": {
+        "sign": "Sagittarius",
+        "degree": 8.103
+      },
+      "Jupiter": {
+        "sign": "Taurus",
+        "degree": 8.9016
+      },
+      "Saturn": {
+        "sign": "Taurus",
+        "degree": 13.2702
+      },
+      "Rahu": {
+        "sign": "Aries",
+        "degree": 28.6443
+      },
+      "Ketu": {
+        "sign": "Libra",
+        "degree": 28.6443
+      }
+    },
+    "vimshottari_dasha": {
+      "moon_nakshatra": "Magha",
+      "moon_nakshatra_lord": "Ketu",
+      "periods": [
+        {
+          "lord": "Ketu",
+          "start": "1998-11-12T00:00:00+05:30",
+          "end": "1999-10-26T19:54:21.821040+05:30",
+          "years": 0.955,
+          "partial": true
+        },
+        {
+          "lord": "Venus",
+          "start": "1999-10-26T19:54:21.821040+05:30",
+          "end": "2019-10-26T19:54:21.821040+05:30",
+          "years": 20,
+          "partial": false
+        },
+        {
+          "lord": "Sun",
+          "start": "2019-10-26T19:54:21.821040+05:30",
+          "end": "2025-10-26T07:54:21.821040+05:30",
+          "years": 6,
+          "partial": false
+        },
+        {
+          "lord": "Moon",
+          "start": "2025-10-26T07:54:21.821040+05:30",
+          "end": "2035-10-26T19:54:21.821040+05:30",
+          "years": 10,
+          "partial": false
+        },
+        {
+          "lord": "Mars",
+          "start": "2035-10-26T19:54:21.821040+05:30",
+          "end": "2042-10-26T13:54:21.821040+05:30",
+          "years": 7,
+          "partial": false
+        },
+        {
+          "lord": "Rahu",
+          "start": "2042-10-26T13:54:21.821040+05:30",
+          "end": "2060-10-26T01:54:21.821040+05:30",
+          "years": 18,
+          "partial": false
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2060-10-26T01:54:21.821040+05:30",
+          "end": "2076-10-26T01:54:21.821040+05:30",
+          "years": 16,
+          "partial": false
+        },
+        {
+          "lord": "Saturn",
+          "start": "2076-10-26T01:54:21.821040+05:30",
+          "end": "2095-10-26T19:54:21.821040+05:30",
+          "years": 19,
+          "partial": false
+        },
+        {
+          "lord": "Mercury",
+          "start": "2095-10-26T19:54:21.821040+05:30",
+          "end": "2112-10-27T01:54:21.821040+05:30",
+          "years": 17,
+          "partial": false
+        }
+      ],
+      "standard_lord_years_total": 120,
+      "actual_periods_total": 113.955,
+      "invariant_120_pass": true,
+      "current_mahadasha": "Moon",
+      "current_mahadasha_ends": "2035-10-26T19:54:21.821040+05:30"
+    },
+    "yogas": [
+      {
+        "name": "Gajakesari Yoga",
+        "rule": "Jupiter in kendra (1,4,7,10) from Moon",
+        "satisfied_by": "Moon in house 7, Jupiter in house 1",
+        "present": true
+      },
+      {
+        "name": "Chandra-Mangal Yoga",
+        "rule": "Moon and Mars in the same sign",
+        "satisfied_by": "Both in Leo",
+        "present": true
+      }
+    ]
+  },
+  "bazi": {
+    "system": "bazi",
+    "configuration": {
+      "time_basis": "local_civil_time",
+      "day_boundary": "midnight (Zi hour start at 23:00 convention noted)",
+      "school": "traditional_mainstream"
+    },
+    "pillars": {
+      "year": {
+        "stem": "Wu",
+        "branch": "Yin",
+        "element": "Earth",
+        "animal": "Tiger",
+        "polarity": "Yang",
+        "hidden_stems": [
+          "Jia",
+          "Bing",
+          "Wu"
+        ],
+        "stem_index": 4,
+        "branch_index": 2,
+        "ten_god": "Direct Officer (Zheng Guan)",
+        "hidden_ten_gods": [
+          {
+            "stem": "Jia",
+            "ten_god": "Hurting Officer (Shang Guan)"
+          },
+          {
+            "stem": "Bing",
+            "ten_god": "Direct Wealth (Zheng Cai)"
+          },
+          {
+            "stem": "Wu",
+            "ten_god": "Direct Officer (Zheng Guan)"
+          }
+        ]
+      },
+      "month": {
+        "stem": "Gui",
+        "branch": "Hai",
+        "element": "Water",
+        "animal": "Pig",
+        "polarity": "Yin",
+        "hidden_stems": [
+          "Ren",
+          "Jia"
+        ],
+        "stem_index": 9,
+        "branch_index": 11,
+        "ten_god": "Companion (Bi Jian)",
+        "hidden_ten_gods": [
+          {
+            "stem": "Ren",
+            "ten_god": "Rob Wealth (Jie Cai)"
+          },
+          {
+            "stem": "Jia",
+            "ten_god": "Hurting Officer (Shang Guan)"
+          }
+        ]
+      },
+      "day": {
+        "stem": "Gui",
+        "branch": "Hai",
+        "element": "Water",
+        "animal": "Pig",
+        "polarity": "Yin",
+        "hidden_stems": [
+          "Ren",
+          "Jia"
+        ],
+        "stem_index": 9,
+        "branch_index": 11
+      },
+      "hour": {
+        "stem": "Ji",
+        "branch": "Wei",
+        "element": "Earth",
+        "animal": "Goat",
+        "polarity": "Yin",
+        "hidden_stems": [
+          "Ji",
+          "Ding",
+          "Yi"
+        ],
+        "stem_index": 5,
+        "branch_index": 7,
+        "ten_god": "7 Killings (Qi Sha)",
+        "hidden_ten_gods": [
+          {
+            "stem": "Ji",
+            "ten_god": "7 Killings (Qi Sha)"
+          },
+          {
+            "stem": "Ding",
+            "ten_god": "Indirect Wealth (Pian Cai)"
+          },
+          {
+            "stem": "Yi",
+            "ten_god": "Eating God (Shi Shen)"
+          }
+        ]
+      }
+    },
+    "day_master": {
+      "stem": "Gui",
+      "element": "Water",
+      "polarity": "Yin"
+    },
+    "da_yun": {
+      "direction": "forward",
+      "gender": "male",
+      "year_stem_polarity": "Yang",
+      "periods": [
+        {
+          "period": 1,
+          "stem": "Jia",
+          "branch": "Zi",
+          "element": "Wood",
+          "animal": "Rat",
+          "approximate_start_age": 3,
+          "approximate_start_year": 2001,
+          "approximate_end_year": 2011,
+          "ten_god": "Hurting Officer (Shang Guan)"
+        },
+        {
+          "period": 2,
+          "stem": "Yi",
+          "branch": "Chou",
+          "element": "Wood",
+          "animal": "Ox",
+          "approximate_start_age": 13,
+          "approximate_start_year": 2011,
+          "approximate_end_year": 2021,
+          "ten_god": "Eating God (Shi Shen)"
+        },
+        {
+          "period": 3,
+          "stem": "Bing",
+          "branch": "Yin",
+          "element": "Fire",
+          "animal": "Tiger",
+          "approximate_start_age": 23,
+          "approximate_start_year": 2021,
+          "approximate_end_year": 2031,
+          "ten_god": "Direct Wealth (Zheng Cai)"
+        },
+        {
+          "period": 4,
+          "stem": "Ding",
+          "branch": "Mao",
+          "element": "Fire",
+          "animal": "Rabbit",
+          "approximate_start_age": 33,
+          "approximate_start_year": 2031,
+          "approximate_end_year": 2041,
+          "ten_god": "Indirect Wealth (Pian Cai)"
+        },
+        {
+          "period": 5,
+          "stem": "Wu",
+          "branch": "Chen",
+          "element": "Earth",
+          "animal": "Dragon",
+          "approximate_start_age": 43,
+          "approximate_start_year": 2041,
+          "approximate_end_year": 2051,
+          "ten_god": "Direct Officer (Zheng Guan)"
+        },
+        {
+          "period": 6,
+          "stem": "Ji",
+          "branch": "Si",
+          "element": "Earth",
+          "animal": "Snake",
+          "approximate_start_age": 53,
+          "approximate_start_year": 2051,
+          "approximate_end_year": 2061,
+          "ten_god": "7 Killings (Qi Sha)"
+        },
+        {
+          "period": 7,
+          "stem": "Geng",
+          "branch": "Wu",
+          "element": "Metal",
+          "animal": "Horse",
+          "approximate_start_age": 63,
+          "approximate_start_year": 2061,
+          "approximate_end_year": 2071,
+          "ten_god": "Direct Resource (Zheng Yin)"
+        },
+        {
+          "period": 8,
+          "stem": "Xin",
+          "branch": "Wei",
+          "element": "Metal",
+          "animal": "Goat",
+          "approximate_start_age": 73,
+          "approximate_start_year": 2071,
+          "approximate_end_year": 2081,
+          "ten_god": "Indirect Resource (Pian Yin)"
+        },
+        {
+          "period": 9,
+          "stem": "Ren",
+          "branch": "Shen",
+          "element": "Water",
+          "animal": "Monkey",
+          "approximate_start_age": 83,
+          "approximate_start_year": 2081,
+          "approximate_end_year": 2091,
+          "ten_god": "Rob Wealth (Jie Cai)"
+        }
+      ],
+      "current_period": {
+        "period": 3,
+        "stem": "Bing",
+        "branch": "Yin",
+        "element": "Fire",
+        "animal": "Tiger",
+        "approximate_start_age": 23,
+        "approximate_start_year": 2021,
+        "approximate_end_year": 2031,
+        "ten_god": "Direct Wealth (Zheng Cai)"
+      }
+    },
+    "lunar_calendar": {
+      "lunar_year": 1998,
+      "lunar_month": 9,
+      "lunar_day": 24,
+      "is_leap_month": false
+    }
+  },
+  "western_hellenistic": {
+    "system": "western_hellenistic",
+    "configuration": {
+      "zodiac": "tropical",
+      "house_system": "whole_sign",
+      "traditional_planets": true,
+      "sect": "day"
+    },
+    "ascendant": {
+      "sign": "Pisces",
+      "degree": 16.8674,
+      "element": "Water",
+      "modality": "Mutable"
+    },
+    "midheaven": {
+      "sign": "Sagittarius"
+    },
+    "planets": {
+      "Sun": {
+        "tropical_longitude": 229.7668,
+        "sign": "Scorpio",
+        "degree_in_sign": 19.7668,
+        "house": 9,
+        "retrograde": false,
+        "speed": 1.005906,
+        "dignities": [],
+        "sect_status": "in_sect",
+        "angularity": "cadent",
+        "element": "Water",
+        "modality": "Fixed"
+      },
+      "Moon": {
+        "tropical_longitude": 155.3554,
+        "sign": "Virgo",
+        "degree_in_sign": 5.3554,
+        "house": 7,
+        "retrograde": false,
+        "speed": 12.295785,
+        "dignities": [],
+        "sect_status": "out_of_sect",
+        "angularity": "angular",
+        "element": "Earth",
+        "modality": "Mutable"
+      },
+      "Mercury": {
+        "tropical_longitude": 252.5316,
+        "sign": "Sagittarius",
+        "degree_in_sign": 12.5316,
+        "house": 10,
+        "retrograde": false,
+        "speed": 0.950083,
+        "dignities": [
+          "detriment"
+        ],
+        "sect_status": "neutral",
+        "angularity": "angular",
+        "element": "Fire",
+        "modality": "Mutable"
+      },
+      "Venus": {
+        "tropical_longitude": 233.0911,
+        "sign": "Scorpio",
+        "degree_in_sign": 23.0911,
+        "house": 9,
+        "retrograde": false,
+        "speed": 1.255066,
+        "dignities": [
+          "detriment"
+        ],
+        "sect_status": "out_of_sect",
+        "angularity": "cadent",
+        "element": "Water",
+        "modality": "Fixed"
+      },
+      "Mars": {
+        "tropical_longitude": 171.4082,
+        "sign": "Virgo",
+        "degree_in_sign": 21.4082,
+        "house": 7,
+        "retrograde": false,
+        "speed": 0.580053,
+        "dignities": [],
+        "sect_status": "out_of_sect",
+        "angularity": "angular",
+        "element": "Earth",
+        "modality": "Mutable"
+      },
+      "Jupiter": {
+        "tropical_longitude": 348.1636,
+        "sign": "Pisces",
+        "degree_in_sign": 18.1636,
+        "house": 1,
+        "retrograde": true,
+        "speed": -0.004016,
+        "dignities": [
+          "domicile"
+        ],
+        "sect_status": "in_sect",
+        "angularity": "angular",
+        "element": "Water",
+        "modality": "Mutable"
+      },
+      "Saturn": {
+        "tropical_longitude": 28.649,
+        "sign": "Aries",
+        "degree_in_sign": 28.649,
+        "house": 2,
+        "retrograde": true,
+        "speed": -0.071535,
+        "dignities": [
+          "fall"
+        ],
+        "sect_status": "in_sect",
+        "angularity": "succedent",
+        "element": "Fire",
+        "modality": "Cardinal"
+      }
+    },
+    "houses": {
+      "1": {
+        "sign": "Pisces",
+        "ruler": "Jupiter",
+        "element": "Water",
+        "modality": "Mutable"
+      },
+      "2": {
+        "sign": "Aries",
+        "ruler": "Mars",
+        "element": "Fire",
+        "modality": "Cardinal"
+      },
+      "3": {
+        "sign": "Taurus",
+        "ruler": "Venus",
+        "element": "Earth",
+        "modality": "Fixed"
+      },
+      "4": {
+        "sign": "Gemini",
+        "ruler": "Mercury",
+        "element": "Air",
+        "modality": "Mutable"
+      },
+      "5": {
+        "sign": "Cancer",
+        "ruler": "Moon",
+        "element": "Water",
+        "modality": "Cardinal"
+      },
+      "6": {
+        "sign": "Leo",
+        "ruler": "Sun",
+        "element": "Fire",
+        "modality": "Fixed"
+      },
+      "7": {
+        "sign": "Virgo",
+        "ruler": "Mercury",
+        "element": "Earth",
+        "modality": "Mutable"
+      },
+      "8": {
+        "sign": "Libra",
+        "ruler": "Venus",
+        "element": "Air",
+        "modality": "Cardinal"
+      },
+      "9": {
+        "sign": "Scorpio",
+        "ruler": "Mars",
+        "element": "Water",
+        "modality": "Fixed"
+      },
+      "10": {
+        "sign": "Sagittarius",
+        "ruler": "Jupiter",
+        "element": "Fire",
+        "modality": "Mutable"
+      },
+      "11": {
+        "sign": "Capricorn",
+        "ruler": "Saturn",
+        "element": "Earth",
+        "modality": "Cardinal"
+      },
+      "12": {
+        "sign": "Aquarius",
+        "ruler": "Saturn",
+        "element": "Air",
+        "modality": "Fixed"
+      }
+    },
+    "aspects": [
+      {
+        "planet1": "Sun",
+        "planet2": "Venus",
+        "aspect": "conjunction",
+        "exact_angle": 0,
+        "actual_angle": 3.3243,
+        "orb": 3.3243,
+        "applying": false
+      },
+      {
+        "planet1": "Sun",
+        "planet2": "Mars",
+        "aspect": "sextile",
+        "exact_angle": 60,
+        "actual_angle": 58.3586,
+        "orb": 1.6414,
+        "applying": true
+      },
+      {
+        "planet1": "Sun",
+        "planet2": "Jupiter",
+        "aspect": "trine",
+        "exact_angle": 120,
+        "actual_angle": 118.3968,
+        "orb": 1.6032,
+        "applying": true
+      },
+      {
+        "planet1": "Moon",
+        "planet2": "Saturn",
+        "aspect": "trine",
+        "exact_angle": 120,
+        "actual_angle": 126.7064,
+        "orb": 6.7064,
+        "applying": true
+      },
+      {
+        "planet1": "Mercury",
+        "planet2": "Jupiter",
+        "aspect": "square",
+        "exact_angle": 90,
+        "actual_angle": 95.632,
+        "orb": 5.632,
+        "applying": true
+      },
+      {
+        "planet1": "Venus",
+        "planet2": "Mars",
+        "aspect": "sextile",
+        "exact_angle": 60,
+        "actual_angle": 61.6829,
+        "orb": 1.6829,
+        "applying": true
+      },
+      {
+        "planet1": "Venus",
+        "planet2": "Jupiter",
+        "aspect": "trine",
+        "exact_angle": 120,
+        "actual_angle": 115.0725,
+        "orb": 4.9275,
+        "applying": true
+      },
+      {
+        "planet1": "Mars",
+        "planet2": "Jupiter",
+        "aspect": "opposition",
+        "exact_angle": 180,
+        "actual_angle": 176.7554,
+        "orb": 3.2446,
+        "applying": true
+      }
+    ],
+    "lots": {
+      "fortune": {
+        "longitude": 272.456,
+        "sign": "Capricorn",
+        "degree": 2.456,
+        "house": 11,
+        "formula": "Asc + Moon - Sun (day)"
+      },
+      "spirit": {
+        "longitude": 61.2787,
+        "sign": "Gemini",
+        "degree": 1.2787,
+        "house": 4
+      }
+    },
+    "profection": {
+      "current_age": 28,
+      "activated_house": 5,
+      "activated_sign": "Cancer",
+      "lord_of_year": "Moon",
+      "lord_natal_condition": {
+        "tropical_longitude": 155.3554,
+        "sign": "Virgo",
+        "degree_in_sign": 5.3554,
+        "house": 7,
+        "retrograde": false,
+        "speed": 12.295785,
+        "dignities": [],
+        "sect_status": "out_of_sect",
+        "angularity": "angular",
+        "element": "Earth",
+        "modality": "Mutable"
+      }
+    },
+    "dispositor_chain": {
+      "Sun": "Mars",
+      "Moon": "Mercury",
+      "Mercury": "Jupiter",
+      "Venus": "Mars",
+      "Mars": "Mercury",
+      "Jupiter": "Jupiter",
+      "Saturn": "Mars"
+    },
+    "final_dispositor": "Jupiter"
+  },
+  "zi_wei_dou_shu": {
+    "system": "zi_wei_dou_shu",
+    "configuration": {
+      "school": "San He (Three Harmony) mainstream",
+      "lunar_calendar_source": "sxtwl",
+      "day_boundary": "midnight",
+      "gender_encoding": "male",
+      "direction": "forward"
+    },
+    "birth_data": {
+      "lunar_year": 1998,
+      "lunar_month": 9,
+      "lunar_day": 24,
+      "is_leap_month": false,
+      "hour_branch": "Wei",
+      "year_stem": "Wu",
+      "year_branch": "Yin"
+    },
+    "five_elements_bureau": {
+      "number": 5,
+      "element": "Earth"
+    },
+    "ming_palace": {
+      "position": 6,
+      "branch": "Si"
+    },
+    "shen_palace": {
+      "position": 4,
+      "branch": "Mao"
+    },
+    "life_ruler": "Wu Qu",
+    "body_ruler": "Tian Liang",
+    "palaces_count": 12,
+    "palaces_unique_check": true,
+    "si_hua_four_transformations": {
+      "source_stem": "Wu",
+      "transformations": {
+        "Lu": "Tan Lang",
+        "Quan": "Tai Yin",
+        "Ke": "You Bi",
+        "Ji": "Tian Ji"
+      }
+    },
+    "decadal_direction": "forward",
+    "major_stars_set": [
+      "Zi Wei (Emperor)",
+      "Tian Ji (Heavenly Secret)",
+      "Tai Yang (Sun)",
+      "Wu Qu (Military)",
+      "Tian Tong (Heavenly Unity)",
+      "Lian Zhen (Purity)",
+      "Tian Fu (Heavenly Treasury)",
+      "Tai Yin (Moon)",
+      "Tan Lang (Greedy Wolf)",
+      "Ju Men (Great Door)",
+      "Tian Xiang (Heavenly Minister)",
+      "Tian Liang (Heavenly Beam)",
+      "Qi Sha (Seven Killings)",
+      "Po Jun (Army Breaker)"
+    ],
+    "zi_wei_star_position": 5,
+    "limitations": [
+      "Major star placement algorithm is simplified; a full validated iztro implementation would be more accurate",
+      "Minor stars not fully computed",
+      "Brightness/temple status not computed without full star placement"
+    ]
+  },
+  "maya": {
+    "system": "maya",
+    "configuration": {
+      "correlation_constant": 584283,
+      "correlation_name": "GMT (Goodman-Martinez-Thompson)"
+    },
+    "long_count": "12.19.5.12.7",
+    "long_count_components": {
+      "baktun": 12,
+      "katun": 19,
+      "tun": 5,
+      "winal": 12,
+      "kin": 7
+    },
+    "tzolkin": {
+      "number": 12,
+      "day_name": "Manik",
+      "display": "12 Manik"
+    },
+    "haab": {
+      "day": 0,
+      "month": "Keh",
+      "display": "0 Keh"
+    },
+    "calendar_round": "12 Manik 0 Keh",
+    "verification": {
+      "input_jdn": 2451130,
+      "reconstructed_jdn": 2451130,
+      "round_trip_pass": true
+    },
+    "note": "Day-sign meanings are attributed symbolic overlays from named Maya sources, not computed astronomical facts. They do not contribute to domain convergence grades."
+  },
+  "tibetan": {
+    "system": "tibetan_elemental",
+    "configuration": {
+      "note": "Tibetan year assumed from Gregorian year; birth in November is after Losar of that year",
+      "losar_boundary": "Not independently computed; approximate only",
+      "validation_status": "partial"
+    },
+    "year": {
+      "element": "Earth",
+      "animal": "Tiger",
+      "gender": "Male",
+      "display": "Male Earth-Tiger",
+      "rabjung_cycle": 17,
+      "year_in_rabjung": 12
+    },
+    "mewa": {
+      "number": 8,
+      "validation": "formula-based, not independently verified against a lineage-specific source"
+    },
+    "parkha": {
+      "name": "Zon",
+      "validation": "formula-based, not independently verified"
+    },
+    "personal_forces": {
+      "status": "unavailable",
+      "reason": "Life, body, power, wind-horse, and soul force anchors require a validated lineage-specific implementation not available in this computation"
+    },
+    "limitations": [
+      "Losar boundary not independently computed",
+      "Mewa and Parkha computed by formula without lineage-specific validation",
+      "Personal forces omitted due to lack of validated implementation",
+      "This system provides a limited symbolic overlay only"
+    ]
+  },
+  "verification": {
+    "cross_engine_validation": [
+      {
+        "status": "unavailable",
+        "reason": "cannot download https://ssd.jpl.nasa.gov/ftp/eph/planets/bsp/de421.bsp because <urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ],
+    "invariants": {
+      "rahu_ketu_180": {
+        "rahu_lon": 123.182702,
+        "ketu_lon": 303.182702,
+        "difference": 180.0,
+        "pass": true
+      },
+      "vimshottari_120_years": {
+        "standard_total": 120,
+        "pass": true
+      },
+      "ziwei_12_palaces": {
+        "count": 12,
+        "pass": true
+      },
+      "maya_round_trip": {
+        "pass": true
+      }
+    },
+    "uncertainty_stability": {
+      "sidereal_ascendant_sign": {
+        "stable": true,
+        "values": [
+          "Aquarius"
+        ]
+      },
+      "Sun_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Libra"
+        ]
+      },
+      "Moon_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Leo"
+        ]
+      },
+      "Mercury_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Scorpio"
+        ]
+      },
+      "Venus_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Libra"
+        ]
+      },
+      "Mars_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Leo"
+        ]
+      },
+      "Jupiter_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Aquarius"
+        ]
+      },
+      "Saturn_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Aries"
+        ]
+      },
+      "Rahu_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Leo"
+        ]
+      },
+      "Ketu_sidereal_sign": {
+        "stable": true,
+        "values": [
+          "Aquarius"
+        ]
+      }
+    }
+  }
+}

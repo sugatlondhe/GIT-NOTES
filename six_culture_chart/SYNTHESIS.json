@@ -1,0 +1,550 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-08-29T09:49:26.257563",
+  "projections": [
+    {
+      "domain": "D1",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Lagna in Aquarius, lord Saturn in house 3 (Aries)",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "lagna_sign_and_lord_placement"
+    },
+    {
+      "domain": "D1",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Moon in Leo (house 7), nakshatra Magha pada 4",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "moon_sign_house_nakshatra"
+    },
+    {
+      "domain": "D2",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "10th lord Mars in house 7 (Leo), dignity: neutral",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "tenth_lord_placement"
+    },
+    {
+      "domain": "D9",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Sun in Libra (house 9), dignity: debilitated, retro: False",
+      "prominence": "medium",
+      "polarity": "negative",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D4",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Moon in Leo (house 7), dignity: neutral, retro: False",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D2",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Mercury in Scorpio (house 10), dignity: neutral, retro: False",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D9",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Venus in Libra (house 9), dignity: own_sign, retro: False",
+      "prominence": "medium",
+      "polarity": "positive",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D4",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Mars in Leo (house 7), dignity: neutral, retro: False",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D1",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Jupiter in Aquarius (house 1), dignity: neutral, retro: True",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D8",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Saturn in Aries (house 3), dignity: debilitated, retro: True",
+      "prominence": "medium",
+      "polarity": "negative",
+      "confidence": "high",
+      "mapping_rule": "graha_house_placement"
+    },
+    {
+      "domain": "D2",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Gajakesari Yoga: Moon in house 7, Jupiter in house 1",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "medium",
+      "mapping_rule": "classical_yoga"
+    },
+    {
+      "domain": "D1",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Gajakesari Yoga: Moon in house 7, Jupiter in house 1",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "medium",
+      "mapping_rule": "classical_yoga"
+    },
+    {
+      "domain": "D3",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Chandra-Mangal Yoga: Both in Leo",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "medium",
+      "mapping_rule": "classical_yoga"
+    },
+    {
+      "domain": "D1",
+      "system": "jyotisha",
+      "cluster": "jyotisha",
+      "fact": "Chandra-Mangal Yoga: Both in Leo",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "medium",
+      "mapping_rule": "classical_yoga"
+    },
+    {
+      "domain": "D1",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Ascendant in Pisces (Water, Mutable)",
+      "prominence": "high",
+      "polarity": "neutral",
+      "confidence": "high",
+      "mapping_rule": "ascendant_sign_element"
+    },
+    {
+      "domain": "D1",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Sun in Scorpio (house 9), sect: in_sect",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "high",
+      "mapping_rule": "sun_sign_house_sect"
+    },
+    {
+      "domain": "D1",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Moon in Virgo (house 7)",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "moon_sign_house"
+    },
+    {
+      "domain": "D9",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Sun in Scorpio (house 9), dignities: none, cadent",
+      "prominence": "medium",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D4",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Moon in Virgo (house 7), dignities: none, angular",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D2",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Mercury in Sagittarius (house 10), dignities: detriment, angular",
+      "prominence": "high",
+      "polarity": "negative",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D9",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Venus in Scorpio (house 9), dignities: detriment, cadent",
+      "prominence": "medium",
+      "polarity": "negative",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D4",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Mars in Virgo (house 7), dignities: none, angular",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D1",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Jupiter in Pisces (house 1), dignities: domicile, angular",
+      "prominence": "high",
+      "polarity": "positive",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D3",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Saturn in Aries (house 2), dignities: fall, succedent",
+      "prominence": "medium",
+      "polarity": "negative",
+      "confidence": "high",
+      "mapping_rule": "planet_house_dignity"
+    },
+    {
+      "domain": "D3",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Lot of Fortune in Capricorn (house 11)",
+      "prominence": "medium",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "lot_of_fortune"
+    },
+    {
+      "domain": "D6",
+      "system": "western",
+      "cluster": "western",
+      "fact": "Age-28 profection activates house 5 (Cancer), lord Moon",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "annual_profection"
+    },
+    {
+      "domain": "D1",
+      "system": "bazi",
+      "cluster": "sinic",
+      "fact": "Day Master: Gui (Water, Yin)",
+      "prominence": "high",
+      "polarity": "neutral",
+      "confidence": "high",
+      "mapping_rule": "day_master_element"
+    },
+    {
+      "domain": "D5",
+      "system": "bazi",
+      "cluster": "sinic",
+      "fact": "Year Pillar: Wu-Yin (Earth Tiger)",
+      "prominence": "medium",
+      "polarity": "neutral",
+      "confidence": "high",
+      "mapping_rule": "year_pillar_family"
+    },
+    {
+      "domain": "D2",
+      "system": "bazi",
+      "cluster": "sinic",
+      "fact": "Month Pillar: Gui-Hai (Water), ten_god: Companion (Bi Jian)",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "month_pillar_career"
+    },
+    {
+      "domain": "D6",
+      "system": "bazi",
+      "cluster": "sinic",
+      "fact": "Hour Pillar: Ji-Wei (Earth), ten_god: 7 Killings (Qi Sha)",
+      "prominence": "medium",
+      "polarity": "mixed",
+      "confidence": "high",
+      "mapping_rule": "hour_pillar_children"
+    },
+    {
+      "domain": "D3",
+      "system": "bazi",
+      "cluster": "sinic",
+      "fact": "Day Master Water \u2014 wealth element is Wood",
+      "prominence": "medium",
+      "polarity": "mixed",
+      "confidence": "medium",
+      "mapping_rule": "day_master_wealth_element"
+    },
+    {
+      "domain": "D1",
+      "system": "zi_wei_dou_shu",
+      "cluster": "sinic",
+      "fact": "Ming Palace in Si, Five Elements Bureau: Earth (5)",
+      "prominence": "high",
+      "polarity": "neutral",
+      "confidence": "medium",
+      "mapping_rule": "ming_palace_bureau"
+    },
+    {
+      "domain": "D2",
+      "system": "zi_wei_dou_shu",
+      "cluster": "sinic",
+      "fact": "Life Ruler: Wu Qu, Si Hua Lu: Tan Lang",
+      "prominence": "high",
+      "polarity": "mixed",
+      "confidence": "medium",
+      "mapping_rule": "life_ruler_si_hua"
+    },
+    {
+      "domain": "D9",
+      "system": "zi_wei_dou_shu",
+      "cluster": "sinic",
+      "fact": "Body Ruler: Tian Liang, Si Hua Ji: Tian Ji",
+      "prominence": "medium",
+      "polarity": "mixed",
+      "confidence": "medium",
+      "mapping_rule": "body_ruler_si_hua"
+    },
+    {
+      "domain": "D1",
+      "system": "maya",
+      "cluster": "maya_overlay",
+      "fact": "Tzolk'in: 12 Manik, Haab': 0 Keh",
+      "prominence": "low",
+      "polarity": "neutral",
+      "confidence": "medium",
+      "mapping_rule": "day_sign_overlay",
+      "overlay_only": true
+    },
+    {
+      "domain": "D1",
+      "system": "tibetan",
+      "cluster": "tibetan_overlay",
+      "fact": "Year: Male Earth-Tiger, Mewa: 8, Parkha: Zon",
+      "prominence": "low",
+      "polarity": "neutral",
+      "confidence": "low",
+      "mapping_rule": "element_animal_overlay",
+      "overlay_only": true
+    }
+  ],
+  "domain_grades": {
+    "D1": {
+      "grade": "STRONG",
+      "clusters_present": 3,
+      "jyotisha": true,
+      "western": true,
+      "sinic": true,
+      "has_conflict": false
+    },
+    "D2": {
+      "grade": "DIVERGENT",
+      "clusters_present": 3,
+      "jyotisha": true,
+      "western": true,
+      "sinic": true,
+      "has_conflict": true
+    },
+    "D3": {
+      "grade": "DIVERGENT",
+      "clusters_present": 3,
+      "jyotisha": true,
+      "western": true,
+      "sinic": true,
+      "has_conflict": true
+    },
+    "D4": {
+      "grade": "MODERATE",
+      "clusters_present": 2,
+      "jyotisha": true,
+      "western": true,
+      "sinic": false,
+      "has_conflict": false
+    },
+    "D5": {
+      "grade": "WEAK",
+      "clusters_present": 1,
+      "jyotisha": false,
+      "western": false,
+      "sinic": true,
+      "has_conflict": false
+    },
+    "D6": {
+      "grade": "MODERATE",
+      "clusters_present": 2,
+      "jyotisha": false,
+      "western": true,
+      "sinic": true,
+      "has_conflict": false
+    },
+    "D7": {
+      "grade": "INSUFFICIENT",
+      "clusters_present": 0,
+      "jyotisha": false,
+      "western": false,
+      "sinic": false,
+      "has_conflict": false
+    },
+    "D8": {
+      "grade": "WEAK",
+      "clusters_present": 1,
+      "jyotisha": true,
+      "western": false,
+      "sinic": false,
+      "has_conflict": false
+    },
+    "D9": {
+      "grade": "DIVERGENT",
+      "clusters_present": 3,
+      "jyotisha": true,
+      "western": true,
+      "sinic": true,
+      "has_conflict": true
+    }
+  },
+  "divergence_rate": {
+    "divergent_over_all": "3/9",
+    "divergent_over_sufficient": "3/8"
+  },
+  "temperament": {
+    "T1": {
+      "axis": "Leadership/Visibility",
+      "signals": [
+        "Jyotisha: Sun in Libra (house 9), dignity debilitated",
+        "Western: Sun in Scorpio (house 9), in_sect"
+      ],
+      "assessment": "present"
+    },
+    "T2": {
+      "axis": "Drive/Initiative",
+      "signals": [
+        "Jyotisha: Mars in Leo (house 7)",
+        "Western: Mars in Virgo (house 7)"
+      ],
+      "assessment": "present"
+    },
+    "T3": {
+      "axis": "Nurturing/Service",
+      "signals": [
+        "Jyotisha: Moon in Leo (house 7)",
+        "Venus in Libra (house 9)"
+      ],
+      "assessment": "present"
+    },
+    "T4": {
+      "axis": "Intellect/Craft",
+      "signals": [
+        "Jyotisha: Mercury in Scorpio (house 10)",
+        "Jupiter in Aquarius (house 1)"
+      ],
+      "assessment": "strong"
+    },
+    "T5": {
+      "axis": "Adaptability",
+      "signals": [
+        "Western: 4 planets in mutable signs",
+        "Ascendant modality: Mutable"
+      ],
+      "assessment": "strong"
+    },
+    "T6": {
+      "axis": "Discipline/Structure",
+      "signals": [
+        "Jyotisha: Saturn in Aries (house 3), dignity debilitated",
+        "Western: 2 planets in fixed signs",
+        "BaZi: Day Master element Water"
+      ],
+      "assessment": "moderate"
+    },
+    "overlays": {
+      "maya": "Day sign: 12 Manik \u2014 Manik (Deer/Hand) is traditionally associated with healing, skill, and community service",
+      "tibetan": "Male Earth-Tiger \u2014 Earth-Tiger combines groundedness with courage and unpredictability; Mewa 8 and Parkha Zon",
+      "note": "These are attributed symbolic descriptions from traditional Maya and Tibetan sources, not computed facts. They corroborate or dissent from computed temperament axes but do not upgrade domain grades."
+    }
+  },
+  "timing": {
+    "current_date": "2026-08-29",
+    "age": 27,
+    "jyotisha": {
+      "current_mahadasha": "Moon",
+      "mahadasha_ends": "2035-10-26T19:54:21.821040+05:30",
+      "moon_nakshatra_lord": "Ketu"
+    },
+    "western": {
+      "profection_house": 5,
+      "profection_sign": "Cancer",
+      "lord_of_year": "Moon"
+    },
+    "bazi": {
+      "current_da_yun": {
+        "period": 3,
+        "stem": "Bing",
+        "branch": "Yin",
+        "element": "Fire",
+        "animal": "Tiger",
+        "approximate_start_age": 23,
+        "approximate_start_year": 2021,
+        "approximate_end_year": 2031,
+        "ten_god": "Direct Wealth (Zheng Cai)"
+      }
+    },
+    "convergence": {
+      "jyotisha_activated_domains": [
+        "D1",
+        "D4",
+        "D5"
+      ],
+      "western_activated_domains": [
+        "D6"
+      ],
+      "overlap_domains": [],
+      "strength": "none",
+      "note": "No three-cluster timing convergence found for the current period"
+    }
+  },
+  "claims_removed": {
+    "count": 3,
+    "reasons": [
+      "Generic Barnum-style self-identity claims removed",
+      "Unverified Zi Wei star brightness claims omitted (limited implementation)",
+      "Tibetan personal forces omitted (no validated implementation)"
+    ]
+  }
+}

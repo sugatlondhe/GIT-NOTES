@@ -1,0 +1,89 @@
+{
+  "cross_engine_validation": [
+    {
+      "status": "unavailable",
+      "reason": "cannot download https://ssd.jpl.nasa.gov/ftp/eph/planets/bsp/de421.bsp because <urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "invariants": {
+    "rahu_ketu_180": {
+      "rahu_lon": 123.182702,
+      "ketu_lon": 303.182702,
+      "difference": 180.0,
+      "pass": true
+    },
+    "vimshottari_120_years": {
+      "standard_total": 120,
+      "pass": true
+    },
+    "ziwei_12_palaces": {
+      "count": 12,
+      "pass": true
+    },
+    "maya_round_trip": {
+      "pass": true
+    }
+  },
+  "uncertainty_stability": {
+    "sidereal_ascendant_sign": {
+      "stable": true,
+      "values": [
+        "Aquarius"
+      ]
+    },
+    "Sun_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Libra"
+      ]
+    },
+    "Moon_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Leo"
+      ]
+    },
+    "Mercury_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Scorpio"
+      ]
+    },
+    "Venus_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Libra"
+      ]
+    },
+    "Mars_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Leo"
+      ]
+    },
+    "Jupiter_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Aquarius"
+      ]
+    },
+    "Saturn_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Aries"
+      ]
+    },
+    "Rahu_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Leo"
+      ]
+    },
+    "Ketu_sidereal_sign": {
+      "stable": true,
+      "values": [
+        "Aquarius"
+      ]
+    }
+  }
+}
