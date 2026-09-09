@@ -20,7 +20,7 @@
     --ink-secondary: #666666;
     --surface: #ffffff;
     --surface-alt: #F5F5F5;
-    --surface-warm: #f8fafb;
+    --surface-card: #f8fafb;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -43,7 +43,7 @@
       --ink-secondary: #b0b0b0;
       --surface: #111416;
       --surface-alt: #1a1e21;
-      --surface-warm: #141819;
+      --surface-card: #141819;
     }
   }
 
@@ -66,7 +66,7 @@
     --ink-secondary: #b0b0b0;
     --surface: #111416;
     --surface-alt: #1a1e21;
-    --surface-warm: #141819;
+    --surface-card: #141819;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -83,13 +83,13 @@
   }
 
   .container {
-    max-width: 960px;
+    max-width: 1000px;
     width: 100%;
   }
 
   .header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
 
   .header .eyebrow {
@@ -102,7 +102,7 @@
   }
 
   .header h1 {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 900;
     color: var(--teal);
     line-height: 1.15;
@@ -120,13 +120,13 @@
     color: var(--ink-secondary);
     margin-top: 12px;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .viz-wrapper {
-    background: var(--surface-warm);
+    background: var(--surface-card);
     border-radius: 16px;
     padding: 40px 32px 32px;
     position: relative;
@@ -223,7 +223,7 @@
   }
 
   .info-panel {
-    background: var(--surface-warm);
+    background: var(--surface-card);
     border-radius: 12px;
     padding: 24px;
   }
@@ -289,111 +289,130 @@
 <div class="container">
   <div class="header">
     <div class="eyebrow">Account-Based Marketing</div>
-    <h1>Decision Grade <span>Visualisation</span></h1>
-    <p class="subtitle">How existing install base and new prospect engagement converge at the decision point — two distinct journeys, one precision outcome.</p>
+    <h1>CI Precision <span>ABM</span></h1>
+    <p class="subtitle">Two distinct journeys — existing install base and new prospects — converging at the decision point. One precision outcome.</p>
   </div>
 
   <div class="viz-wrapper">
-    <svg class="viz-svg" viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg">
+    <svg class="viz-svg" viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="tealFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" style="stop-color:var(--teal);stop-opacity:0.10"/>
+          <stop offset="100%" style="stop-color:var(--teal);stop-opacity:0.02"/>
+        </linearGradient>
+        <linearGradient id="greenFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" style="stop-color:var(--green);stop-opacity:0.02"/>
+          <stop offset="100%" style="stop-color:var(--green);stop-opacity:0.10"/>
+        </linearGradient>
+        <radialGradient id="pinchGlow" cx="50%" cy="50%" r="50%">
           <stop offset="0%" style="stop-color:var(--teal);stop-opacity:0.12"/>
-          <stop offset="100%" style="stop-color:var(--teal);stop-opacity:0.01"/>
-        </linearGradient>
-        <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" style="stop-color:var(--green);stop-opacity:0.01"/>
-          <stop offset="100%" style="stop-color:var(--green);stop-opacity:0.12"/>
-        </linearGradient>
-        <linearGradient id="axisGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" style="stop-color:var(--teal);stop-opacity:0.7"/>
-          <stop offset="50%" style="stop-color:var(--ink-secondary);stop-opacity:0.3"/>
-          <stop offset="100%" style="stop-color:var(--green);stop-opacity:0.7"/>
-        </linearGradient>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="3" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
+          <stop offset="100%" style="stop-color:var(--teal);stop-opacity:0"/>
+        </radialGradient>
       </defs>
 
-      <!-- Subtle grid lines -->
-      <line x1="80" y1="60" x2="80" y2="360" stroke="var(--teal-20)" stroke-width="1" opacity="0.5"/>
-      <line x1="80" y1="210" x2="820" y2="210" stroke="var(--teal-20)" stroke-width="1" opacity="0.3" stroke-dasharray="none"/>
+      <!-- Vertical axis on the RIGHT (matching sketch) -->
+      <line x1="840" y1="40" x2="840" y2="420" stroke="var(--ink-secondary)" stroke-width="1.5" opacity="0.35"/>
 
-      <!-- Vertical axis -->
-      <line x1="80" y1="40" x2="80" y2="380" stroke="var(--ink-secondary)" stroke-width="1.5" opacity="0.4"/>
+      <!-- Axis label on right -->
+      <text x="880" y="230" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="var(--ink-secondary)" letter-spacing="2" transform="rotate(90, 880, 230)">DECISION GRADE</text>
 
-      <!-- Axis label -->
-      <text x="30" y="210" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="var(--ink-secondary)" letter-spacing="1.5" transform="rotate(-90, 30, 210)">DECISION GRADE</text>
+      <!-- High / Low markers on right axis -->
+      <text x="830" y="62" text-anchor="end" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">HIGH</text>
+      <line x1="835" y1="58" x2="840" y2="58" stroke="var(--ink-secondary)" stroke-width="1.5" opacity="0.35"/>
 
-      <!-- Top label: High engagement -->
-      <text x="70" y="62" text-anchor="end" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.7">HIGH</text>
+      <text x="830" y="412" text-anchor="end" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">LOW</text>
+      <line x1="835" y1="408" x2="840" y2="408" stroke="var(--ink-secondary)" stroke-width="1.5" opacity="0.35"/>
 
-      <!-- Bottom label: Low engagement -->
-      <text x="70" y="365" text-anchor="end" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.7">LOW</text>
+      <!-- Midpoint tick -->
+      <line x1="835" y1="230" x2="840" y2="230" stroke="var(--ink-secondary)" stroke-width="1.5" opacity="0.25"/>
 
-      <!-- Time axis labels -->
-      <text x="120" y="400" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">AWARENESS</text>
-      <text x="310" y="400" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">EVALUATION</text>
-      <text x="500" y="400" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">DECISION</text>
-      <text x="680" y="400" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--ink-secondary)" opacity="0.6">COMMITMENT</text>
+      <!-- Subtle horizontal midline -->
+      <line x1="60" y1="230" x2="840" y2="230" stroke="var(--teal-20)" stroke-width="1" opacity="0.3"/>
 
-      <!-- Tick marks on time axis -->
-      <line x1="120" y1="375" x2="120" y2="380" stroke="var(--ink-secondary)" stroke-width="1" opacity="0.3"/>
-      <line x1="310" y1="375" x2="310" y2="380" stroke="var(--ink-secondary)" stroke-width="1" opacity="0.3"/>
-      <line x1="500" y1="375" x2="500" y2="380" stroke="var(--ink-secondary)" stroke-width="1" opacity="0.3"/>
-      <line x1="680" y1="375" x2="680" y2="380" stroke="var(--ink-secondary)" stroke-width="1" opacity="0.3"/>
+      <!-- Pinch point glow -->
+      <ellipse cx="480" cy="230" rx="60" ry="50" fill="url(#pinchGlow)"/>
 
-      <!-- Time axis line -->
-      <line x1="80" y1="378" x2="820" y2="378" stroke="var(--ink-secondary)" stroke-width="1" opacity="0.3"/>
+      <!-- === EXISTING INSTALL BASE (top curve) === -->
+      <!-- Starts top-left, sweeps down sharply to pinch at center, opens back up to the right -->
 
-      <!-- EXISTING INSTALL BASE curve (top - starts high, descends to convergence) -->
-      <!-- Area fill -->
-      <path d="M 100 70 C 180 72, 250 90, 340 140 C 420 185, 440 200, 480 208 C 520 215, 600 215, 700 213 L 700 210 L 100 210 Z" fill="url(#tealGrad)"/>
-      <!-- Main curve -->
-      <path d="M 100 70 C 180 72, 250 90, 340 140 C 420 185, 440 200, 480 208 C 520 215, 600 215, 700 213"
+      <!-- Area fill: top curve to midline -->
+      <path d="M 80 55
+               C 160 55, 220 60, 300 100
+               C 380 145, 430 200, 480 225
+               C 530 200, 580 145, 660 100
+               C 740 60, 790 55, 840 55
+               L 840 230
+               L 80 230 Z"
+            fill="url(#tealFill)"/>
+
+      <!-- Top curve line -->
+      <path d="M 80 55
+               C 160 55, 220 60, 300 100
+               C 380 145, 430 200, 480 225
+               C 530 200, 580 145, 660 100
+               C 740 60, 790 55, 840 55"
             fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- Start marker -->
-      <circle cx="100" cy="70" r="5" fill="var(--teal)" stroke="var(--surface-warm)" stroke-width="2"/>
-      <!-- End marker -->
-      <circle cx="700" cy="213" r="5" fill="var(--teal)" stroke="var(--surface-warm)" stroke-width="2"/>
 
-      <!-- PROSPECT curve (bottom - starts low, rises to convergence) -->
-      <!-- Area fill -->
-      <path d="M 100 350 C 180 348, 250 330, 340 280 C 420 235, 440 220, 480 212 C 520 205, 600 205, 700 207 L 700 210 L 100 210 Z" fill="url(#greenGrad)"/>
-      <!-- Main curve -->
-      <path d="M 100 350 C 180 348, 250 330, 340 280 C 420 235, 440 220, 480 212 C 520 205, 600 205, 700 207"
+      <!-- Start dot -->
+      <circle cx="80" cy="55" r="5" fill="var(--teal)" stroke="var(--surface-card)" stroke-width="2"/>
+
+      <!-- === PROSPECT DECISION PATH (bottom curve) === -->
+      <!-- Starts bottom-left, sweeps up sharply to pinch at center, opens back down to the right -->
+
+      <!-- Area fill: midline to bottom curve -->
+      <path d="M 80 405
+               C 160 405, 220 400, 300 360
+               C 380 315, 430 260, 480 235
+               C 530 260, 580 315, 660 360
+               C 740 400, 790 405, 840 405
+               L 840 230
+               L 80 230 Z"
+            fill="url(#greenFill)"/>
+
+      <!-- Bottom curve line -->
+      <path d="M 80 405
+               C 160 405, 220 400, 300 360
+               C 380 315, 430 260, 480 235
+               C 530 260, 580 315, 660 360
+               C 740 400, 790 405, 840 405"
             fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- Start marker -->
-      <circle cx="100" cy="350" r="5" fill="var(--green)" stroke="var(--surface-warm)" stroke-width="2"/>
-      <!-- End marker -->
-      <circle cx="700" cy="207" r="5" fill="var(--green)" stroke="var(--surface-warm)" stroke-width="2"/>
 
-      <!-- Convergence zone indicator -->
-      <rect x="465" y="195" width="90" height="30" rx="15" fill="var(--teal)" opacity="0.08"/>
-      <text x="510" y="214" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="var(--ink-secondary)" letter-spacing="0.5">CONVERGE</text>
+      <!-- Start dot -->
+      <circle cx="80" cy="405" r="5" fill="var(--green)" stroke="var(--surface-card)" stroke-width="2"/>
 
-      <!-- Post-convergence: unified path extending right -->
-      <path d="M 700 210 C 740 210, 770 210, 810 210" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-      <path d="M 790 204 L 810 210 L 790 216" fill="none" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+      <!-- === PINCH POINT MARKER === -->
+      <circle cx="480" cy="230" r="7" fill="var(--surface-card)" stroke="var(--teal)" stroke-width="2"/>
+      <circle cx="480" cy="230" r="3" fill="var(--teal)"/>
 
-      <!-- Direct labels for curves -->
-      <rect x="108" y="46" width="148" height="22" rx="4" fill="var(--teal)" opacity="0.08"/>
-      <text x="116" y="62" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="var(--ink-primary)">Existing Install Base</text>
+      <!-- Pinch label -->
+      <rect x="440" y="244" width="80" height="20" rx="10" fill="var(--teal)" opacity="0.1"/>
+      <text x="480" y="258" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="var(--ink-primary)" letter-spacing="1">DECISION</text>
 
-      <rect x="108" y="352" width="180" height="22" rx="4" fill="var(--green)" opacity="0.08"/>
-      <text x="116" y="368" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="var(--ink-primary)">Prospect Decision Path</text>
+      <!-- === DIRECT LABELS === -->
 
-      <!-- Annotation: Upgrades callout on top curve -->
-      <text x="250" y="100" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--teal-80)">Contracts &amp; upgrades</text>
-      <line x1="250" y1="103" x2="280" y2="118" stroke="var(--teal-80)" stroke-width="1" opacity="0.4"/>
+      <!-- Top-left: Existing Install Base -->
+      <text x="90" y="42" font-family="'Montserrat', sans-serif" font-size="13" font-weight="700" fill="var(--ink-primary)">Existing Install Base</text>
+      <text x="90" y="58" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--teal-80)">Contracts &amp; upgrades</text>
 
-      <!-- Annotation: Discovery on bottom curve -->
-      <text x="220" y="330" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--green)">Discovery &amp; evaluation</text>
-      <line x1="260" y1="325" x2="275" y2="310" stroke="var(--green)" stroke-width="1" opacity="0.4"/>
+      <!-- Bottom-left: Prospect -->
+      <text x="90" y="420" font-family="'Montserrat', sans-serif" font-size="13" font-weight="700" fill="var(--ink-primary)">Prospect Decision Approach</text>
 
-      <!-- Right-side outcome label -->
-      <text x="825" y="198" text-anchor="start" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="var(--ink-secondary)" letter-spacing="0.5">UNIFIED</text>
-      <text x="825" y="210" text-anchor="start" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="var(--ink-secondary)" letter-spacing="0.5">OUTCOME</text>
+      <!-- Top-right mirror label -->
+      <text x="680" y="78" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--teal-80)" opacity="0.7">Existing contracts</text>
+      <text x="680" y="92" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--teal-80)" opacity="0.7">(upgrades)</text>
+
+      <!-- Bottom-right mirror label -->
+      <text x="660" y="382" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--green)" opacity="0.7">Prospect decision</text>
+      <text x="660" y="396" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="var(--green)" opacity="0.7">approach</text>
+
+      <!-- Small arrows at the pinch indicating convergence -->
+      <!-- Top arrow pointing down-right to pinch -->
+      <path d="M 370 140 L 420 185" fill="none" stroke="var(--teal)" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+      <path d="M 414 178 L 422 187 L 412 187" fill="var(--teal)" opacity="0.35"/>
+
+      <!-- Bottom arrow pointing up-right to pinch -->
+      <path d="M 370 320 L 420 275" fill="none" stroke="var(--green)" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+      <path d="M 414 282 L 422 273 L 412 273" fill="var(--green)" opacity="0.35"/>
     </svg>
 
     <div class="legend-row">
@@ -410,24 +429,24 @@
 
   <div class="stage-cards">
     <div class="stage-card">
-      <div class="stage-label">Stage 01</div>
-      <div class="stage-name">Awareness</div>
-      <div class="stage-desc">Existing customers start with high engagement; prospects enter at low awareness.</div>
+      <div class="stage-label">Left Side</div>
+      <div class="stage-name">Wide Engagement</div>
+      <div class="stage-desc">Existing customers start at high engagement; prospects enter at low awareness. Maximum separation.</div>
     </div>
     <div class="stage-card">
-      <div class="stage-label">Stage 02</div>
+      <div class="stage-label">Narrowing</div>
       <div class="stage-name">Evaluation</div>
-      <div class="stage-desc">Both paths move toward the decision zone as requirements crystallise.</div>
+      <div class="stage-desc">Both paths accelerate toward the decision zone as requirements crystallise.</div>
     </div>
     <div class="stage-card">
-      <div class="stage-label">Stage 03</div>
+      <div class="stage-label">Pinch Point</div>
       <div class="stage-name">Decision</div>
-      <div class="stage-desc">The convergence point where both journeys align on precision outcomes.</div>
+      <div class="stage-desc">The convergence — where both journeys meet at the same precision outcome.</div>
     </div>
     <div class="stage-card">
-      <div class="stage-label">Stage 04</div>
+      <div class="stage-label">Right Side</div>
       <div class="stage-name">Commitment</div>
-      <div class="stage-desc">Unified engagement delivers long-term partnership and dedicated support for life.</div>
+      <div class="stage-desc">Paths re-open into their respective engagement models. Partnership for life.</div>
     </div>
   </div>
 
